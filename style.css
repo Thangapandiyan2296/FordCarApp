@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+body
+{
+    width: 100%;
+    min-width: 100vh;
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px;
+    animation: header 2s ease-in-out;
+}
+@keyframes header
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+}
+.nav
+{
+    display: flex;
+    text-decoration: none;
+}
+.nav li
+{
+    display: inline-block;
+    margin: 15px 20px;
+    font-size: 600;
+}
+.main
+{
+    width: 100%;
+    display: flex;
+
+}
+.content
+{
+    width: 50%;
+    margin-top: 90px;
+    margin-left: 60px;
+    /* overflow: hidden; */
+    animation: content 2s ease-in-out;
+}
+@keyframes content
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    
+}
+.content h1
+{
+    font-size: 80px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+.image
+{
+    z-index: -1;
+    width: 50%;
+    /* overflow: hidden; */
+}
+.content h3
+{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+span
+{
+    color: yellow;
+}
+.content h4
+{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+button
+{
+    padding: 15px 30px;
+    font-size: 17px;
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+button:hover
+{
+    background-color: red;
+}
+img
+{
+    width: 650px;
+    margin-top: 70px;
+    animation: car 5s ease-in-out;
+}
+@keyframes car
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .nav
+    {
+        width: 65%;
+    }
+    .content
+    {
+        width: 100%;
+        text-align: center;
+        margin-right: 160px;        
+    }
+    .image
+    {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        bottom: -80px;
+        justify-content: center;
+    }
+    img
+    {
+        width: 480px;
+        margin-bottom: 100px;
+    }
+    .content h1    
+    {
+        margin-top: -53px;
+    }
+    .content h3,h4,p
+    {
+        margin-top: 10px;
+    }
+    .content h3,h4
+    {
+       text-align: center;
+    }
+}
